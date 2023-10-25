@@ -22,3 +22,23 @@ Route::get('/', function () {
 
     return view('home', $data);
 });
+
+Route::get('/about', function () {
+
+    $data = [
+        'message' => 'This is an about page',
+    ];
+
+
+    return view('about', $data);
+});
+
+Route::get('/contacts', function () {
+
+    $data = [
+        'message' => 'This is a contacts page (call me maybe)',
+    ];
+
+
+    return view('contacts', $data);
+});
